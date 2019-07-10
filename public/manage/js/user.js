@@ -63,8 +63,8 @@ $(function() {
     var id = $(this).parent().data("id");
     // 获取将来需要将用户置成什么状态
     var isDelete = $(this).hasClass("btn-success") ? 1 : 0;
-    console.log( id );
-    console.log(isDelete);
+    // console.log( id );
+    // console.log(isDelete);
 
     // 先解绑, 再绑定事件, 可以保证只有一个事件绑定在 按钮上
     $('#submitBtn').off("click").on("click", function() {

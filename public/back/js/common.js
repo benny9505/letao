@@ -1,9 +1,14 @@
+// 配置禁用小圆环
+NProgress.configure({ showSpinner: false });
+
 /*进度条*/
 $(document).ajaxStart(function(){
     NProgress.start();
 });
 $(document).ajaxStop(function(){
-    NProgress.done();
+    setTimeout(function() {
+        NProgress.done();
+    }, 300)
 });
 
 
